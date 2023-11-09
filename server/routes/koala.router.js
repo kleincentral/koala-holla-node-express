@@ -83,7 +83,7 @@ koalaRouter.put('/:id', (req, res) =>{
 koalaRouter.delete('/:id', (req, res) => {
   let text = `
   DELETE FROM "koalas"
-    WHERE"id" = $1`
+    WHERE "id" = $1`
   const sqlValues = [req.params.id]
   pool.query(text,sqlValues)
   .then((dbResult) => {
