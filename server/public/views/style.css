@@ -1,0 +1,7 @@
+header {
+    background-color: aqua;
+}
+
+table, thead, tbody, th, td, tr {
+    border: solid 1px black;
+}
